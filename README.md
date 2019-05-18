@@ -22,4 +22,4 @@ Please upload the script and/or file(s) you used to complete this form.
 
 BONUS: Please upload a script with a user-defined function that accepts OwnerID as an input and returns a vector of pet names for the given OwnerID.
 
-Solution in Test.r
+Solution in Test.r and Test.sql
