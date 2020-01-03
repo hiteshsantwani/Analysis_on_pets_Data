@@ -4,7 +4,7 @@ CREATE DATABASE Test;
 USE Test;
 
 CREATE TABLE pets( 
-	petid VARCHAR(255) , 
+    petid VARCHAR(255) , 
     name VARCHAR(255) ,
     kind VARCHAR(255) ,
     gender VARCHAR(255) ,
@@ -51,7 +51,7 @@ where pets.petid = TopPetids.petid;
 
 create view TopSpend as
 ( select ownerid, sum(price) as total
-	from pets join
+    from pets join
     procedures on
     pets.petid = procedures.PetID
     join proceduredetails on
@@ -70,7 +70,7 @@ where owners.ownerid = TopSpend.ownerid;
 
 create view atemp as
 ( select ownerid, sum(price) as total, count(procedures.petid) as freq
-	from pets join
+    from pets join
     procedures on
     pets.petid = procedures.PetID
     join proceduredetails on
